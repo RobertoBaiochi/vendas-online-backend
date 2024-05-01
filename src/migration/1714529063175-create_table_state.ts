@@ -7,7 +7,7 @@ export class CreateTableState1714529063175 implements MigrationInterface {
         id int NOT NULL,
         name character varying NOT NULL,
         created_at timestamp without time zone DEFAULT now() NOT NULL,
-        update_ad timestamp without time zone DEFAULT now() NOT NULL,
+        updated_at timestamp without time zone DEFAULT now() NOT NULL,
         primary key (id)
     );
     
