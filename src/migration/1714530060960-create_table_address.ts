@@ -11,7 +11,7 @@ export class CreateTableAddress1714530060960 implements MigrationInterface {
             cep character varying NOT NULL,
             city_id int NOT NULL,
             created_at timestamp without time zone DEFAULT now() NOT NULL,
-            update_ad timestamp without time zone DEFAULT now() NOT NULL,
+            updated_at timestamp without time zone DEFAULT now() NOT NULL,
             primary key (id),
             foreign key (user_id) references public.user(id),
             foreign key (city_id) references public.city(id)

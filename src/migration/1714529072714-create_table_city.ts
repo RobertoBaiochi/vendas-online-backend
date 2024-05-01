@@ -8,7 +8,7 @@ export class CreateTableCity1714529072714 implements MigrationInterface {
         state_id int NOT NULL,
         name character varying NOT NULL,
         created_at timestamp without time zone DEFAULT now() NOT NULL,
-        update_ad timestamp without time zone DEFAULT now() NOT NULL,
+        updated_at timestamp without time zone DEFAULT now() NOT NULL,
         primary key (id),
         foreign key (state_id) references public.state(id) 
     );
